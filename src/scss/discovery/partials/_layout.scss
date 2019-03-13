@@ -1,0 +1,354 @@
+body {
+	color: $primary-color;
+	font-size: 12px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+h2, .h2 {
+    margin-bottom: 0.8rem;
+}
+p {
+	font-weight: 100;
+	font-size: 14px;
+    margin-bottom: 0.3rem;
+}
+a {
+	color: $color-blue;
+}
+/* Bootstrap overrides */
+.btn {
+    font-size: 0.7rem;
+}
+.btn-outline-primary,  {
+	color: $color-blue;
+	border-color: $color-blue;
+	border-radius: 0;
+}
+select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: 97% 50%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg version="1.1" width="18" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129"><g><path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/></g></svg>');
+    padding: .5em;
+    padding-right: 1.5em;
+    box-shadow: 0 0 0 3px rgba(169, 169, 169, 0.25);
+}
+.navbar-custom {
+	.navbar-toggler {
+		padding: 0;
+	}
+}
+/* End Bootstrap overrides */
+
+.colour-blue {color: $color-blue;}
+header {
+	background-color: $color-white;
+	.header {
+		text-transform: uppercase;
+	    padding: 20px 0;
+		.header-logo {
+		    background: url(../icons/logo-color.svg) 0 0/156px 32px no-repeat;
+		    display: block;
+		    width: 170px!important;
+		    height: 40px;
+		}
+
+		.member-area {
+			text-transform: uppercase;
+			padding: 5px 0;
+
+			@media screen and (max-width: $break-small) {
+			   	padding: 0;
+			}
+			ul {
+				margin-bottom: 0;
+				list-style: none;
+				li {
+					display: inline-block;
+					position: relative;
+					padding: 0 10px;
+					&.divider {
+						&:before {
+							content: "";
+							position: absolute;
+							background: $gray-1;
+						    width: 1px;						    
+						    height: 90%;
+    						top: 10%;
+						    left: -1px;
+						}
+					}
+					a {
+						&.icon {
+							font-size: 16px;
+						}
+						&.btn {
+							    border-radius: 0;
+							    border: 0;
+							    font-size: 12px;
+							    padding: 5px 15px 4px;
+							    line-height: 1.5em;
+							background-color: $color-blue;
+						}
+					}
+					span {
+						color: $gray-1;
+					}
+				}
+			}
+		}
+	}
+	.menu {
+		border-top: 1px solid #eceeef;
+	    border-bottom: 1px solid #e5e5e5;
+	    text-transform: uppercase;
+	    color: #292b2c;
+		nav {
+			@media screen and (max-width: $break-small) {
+				padding: 0;
+			}
+			ul {
+				@media screen and (max-width: $break-small) {
+				   	.nav-item {
+					    padding: 0.5rem 0;
+					    border-bottom: 1px solid #ccc;
+					}
+				}
+				a {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+.bg-gray {
+	background-color: $bg-color-light-gray;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.section {
+	padding: $section-padding;
+}
+#employee-welcome {
+	padding: $div-sec-padding;
+	margin: $section-margin;
+
+	.title {
+		color: $color-blue;
+	}
+
+	.subtitle {
+		font-size: 16px;
+	}
+}
+
+#active-products {
+	margin: $section-margin;
+	padding: $div-sec-padding;
+	.card {
+		padding: 20px;
+		.card-title {
+			padding-bottom: 10px;
+			border-bottom: 3px solid;
+			h4 {
+				padding-left: 35px;
+    			position: relative;
+
+    			&:after {
+    				font-family: FontAwesome;
+    				font-size: 30px;
+				    -webkit-font-smoothing: antialiased;
+				    -moz-osx-font-smoothing: grayscale;
+				    display: inline-block;
+				    text-decoration: none;
+				    color: $gray-2;
+				    padding-left: 5px;
+				    position: absolute;
+				    right: 15px;
+				    content: $fa-var-angle-right;
+    			}
+				.icon {
+					position: absolute;
+    				left: 0;
+    				bottom: 0;
+	    			svg {
+					    width: 23px;
+					    height: 23px;
+					}
+				}
+			}
+			    
+		}
+		.card-body {
+			color: $primary-color;
+		}
+
+		&.card-blue { 
+			color: $color-blue;
+			fill: $color-blue;
+		}
+		&.card-orange { 
+			color: $color-orange;
+			fill: $color-orange;
+		}
+		&.card-red { 
+			color: $color-red;
+			fill: $color-red;
+		}
+	}
+}
+
+#employee-health {
+	margin: $section-margin;
+	padding: $div-sec-padding;
+	.panel {
+		background-color: $color-white;
+		border-left: 4px solid;
+		margin-bottom: 20px;
+
+		.panel-item {
+			padding: 20px 30px;
+
+			&:first-child {
+				border-right: 1px solid #eceeef;
+			}
+		}
+	}
+	.panel-blue {    
+	    border-color: $color-blue;
+		.title {
+			color: $color-blue;
+		}
+	    .icon {
+			background-color: $color-blue;
+		}
+	}
+	.panel-red {    
+	    border-color: $color-red;
+		.title {
+			color: $color-red;
+		}
+	    .icon {
+			background-color: $color-red;
+		}
+	}
+	.icon {
+		width: 45px;
+    	height: 45px;
+		padding: 5px;
+		border-radius: 50%;
+		position: absolute;
+	   	right: 33px;
+	    display: block;
+	    z-index: 100;
+	    top: 15px;
+	    .fa {
+			color: #fff;
+			width: 40px;
+		    text-align: center;
+		    font-size: 20px;
+		    margin-top: 7px;
+		}
+	}
+}
+
+#recommended-products {
+	margin: $section-margin;
+	padding: $div-sec-padding;
+	.card-body {
+		padding: 20px;
+
+		p {
+			font-size: 16px;
+			margin-bottom: 0.9rem;
+		}
+	}
+	.card-bottom {
+		padding: 10px 15px;
+		border-top: 1px solid #d5d5d5;
+	}
+}
+/* Footer */
+footer {
+	background: $bg-color-gray;
+	font-size: 16px;
+	padding: 45px 0;
+	
+	h4 {
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 15px;
+	}
+	ul {
+		li {
+			line-height: 26px;
+			margin-bottom: 15px;
+		}
+
+		&.inline-divider {
+			li {
+				position: relative;
+    			padding: 0 15px;
+				&:before {
+					content: "";
+					position: absolute;
+					background: $gray-3;
+				    width: 1px;						    
+				    height: 90%;
+					top: 10%;
+				    left: -1px;
+				}
+				&:first-child {
+	    			padding-left: 0;
+
+	    			&:before {
+						 width: 0;
+	    			}
+	    		}
+			}
+		}
+	}
+	.btn {
+	    font-size: 1rem;
+	    padding: 0 9px;
+	}
+	.form-control {
+		border-radius: 0;
+	}
+}
+.section-copyright {
+	padding: 20px 0;
+	font-size: 13px;
+	ul {
+		margin-bottom: 0;
+		@media screen and (max-width: $break-small) {
+		   	margin-bottom: 20px;
+		}
+		li {
+			position: relative;
+    		padding-left: 7px;
+			&:before {
+				content: "";
+				position: absolute;
+				background: $gray-1;
+			    width: 1px;						    
+			    height: 90%;
+				top: 10%;
+			    left: -1px;
+			}
+			&:first-child {
+    			padding-left: 0;
+
+    			&:before {
+					 width: 0;
+    			}
+    		}
+		}
+	}
+}
