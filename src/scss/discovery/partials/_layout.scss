@@ -14,7 +14,7 @@ p {
     margin-bottom: 0.3rem;
 }
 a {
-	color: $color-blue;
+	color: $color-links-blue;
 }
 /* Bootstrap overrides */
 .btn {
@@ -24,6 +24,7 @@ a {
 	color: $color-blue;
 	border-color: $color-blue;
 	border-radius: 0;
+	border-width: 2px;
 }
 select:not([multiple]) {
     -webkit-appearance: none;
@@ -85,11 +86,11 @@ header {
 							font-size: 16px;
 						}
 						&.btn {
-							    border-radius: 0;
-							    border: 0;
-							    font-size: 12px;
-							    padding: 5px 15px 4px;
-							    line-height: 1.5em;
+						    border-radius: 0;
+						    border: 0;
+						    font-size: 12px;
+						    padding: 5px 15px 4px;
+						    line-height: 1.5em;
 							background-color: $color-blue;
 						}
 					}
@@ -139,7 +140,7 @@ header {
 	margin: $section-margin;
 
 	.title {
-		color: $color-blue;
+		color: $color-h1-blue;
 	}
 
 	.subtitle {
