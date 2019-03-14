@@ -92,6 +92,13 @@ header {
 						    padding: 5px 15px 4px;
 						    line-height: 1.5em;
 							background-color: $color-blue;
+							@media screen and (max-width: $break-medium) {
+							   	background-color: transparent;
+    							color: $primary-color;	
+    							padding: 0;
+    							font-size: 16px;
+    							line-height: 1.4rem;					
+    						}
 						}
 					}
 					span {
@@ -261,17 +268,24 @@ header {
 #recommended-products {
 	margin: $section-margin;
 	padding: $div-sec-padding;
-	.card-body {
-		padding: 20px;
-
-		p {
-			font-size: 16px;
-			margin-bottom: 0.9rem;
+	.card {
+		.img-fluid {
+			@include target-metro {
+		        height: 100%;
+		    }
 		}
-	}
-	.card-bottom {
-		padding: 10px 15px;
-		border-top: 1px solid #d5d5d5;
+		.card-body {
+			padding: 20px;
+
+			p {
+				font-size: 16px;
+				margin-bottom: 0.9rem;
+			}
+		}
+		.card-bottom {
+			padding: 10px 15px;
+			border-top: 1px solid #d5d5d5;
+		}
 	}
 }
 /* Footer */

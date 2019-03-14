@@ -8,6 +8,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Discovery</title>
 	<link rel="stylesheet" type="text/css" href="/src/scss/discovery.css">
+
+	<!--[if gt IE 8]><!-->
+	  <link stylesheet_link_tag 'screen', :media => 'screen' link>
+	<!--<![endif]-->
+	<!--[if lte IE 8]>
+	  <link stylesheet_link_tag 'screen_for_ie', :media => 'screen' >
+	<![endif]-->
+	<script>
+		document.documentElement.setAttribute("data-browser", navigator.userAgent);
+	</script>
 </head>
 <body>
 	<!-- Start Header -->
@@ -312,7 +322,7 @@
 				<div class="row">
 					<div class="col-sm">
 						<div class="card mb-4 shadow-sm rounded-0">
-				            <img class="img-fluid h-100" src="/src/img/500x260_Group_Risk@1x.jpg">
+				            <img class="img-fluid" src="/src/img/500x260_Group_Risk@1x.jpg">
 				            <div class="card-body">
 				            	<h3 class="card-title">Business Insurance</h3>
 				              	<p class="card-text">Some quick example text to build on the card tile and make up the bulk of the card's content.</p>
@@ -324,7 +334,7 @@
 					</div>
 					<div class="col-sm">
 						<div class="card mb-4 shadow-sm rounded-0">
-				            <img class="img-fluid h-100" src="/src/img/500x260_Primary_Care@2x.jpg">
+				            <img class="img-fluid" src="/src/img/500x260_Primary_Care@2x.jpg">
 				            <div class="card-body">
 				            	<h3 class="card-title">Healthy Company</h3>
 				              	<p class="card-text">Some quick example text to build on the card tile and make up the bulk of the card's content.</p>
@@ -336,7 +346,7 @@
 					</div>
 					<div class="col-sm">
 						<div class="card mb-4 shadow-sm rounded-0">
-				            <img class="img-fluid h-100" src="/src/img/500x260_Vitality_and_Wellness@2x.jpg">
+				            <img class="img-fluid" src="/src/img/500x260_Vitality_and_Wellness@2x.jpg">
 				            <div class="card-body">
 				            	<h3 class="card-title">Gap Cover</h3>
 				              	<p class="card-text">Some quick example text to build on the card tile and make up the bulk of the card's content.</p>

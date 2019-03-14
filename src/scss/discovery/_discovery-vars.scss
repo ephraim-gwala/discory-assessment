@@ -1,5 +1,8 @@
-/* Colors */
+$ie8: false !default;
+$ie9: false !default;
 
+
+/* Colors */
 $primary-color: #292b2c;
 $color-white: #ffffff;
 $color-red: #e7446d;
@@ -24,6 +27,6 @@ $div-sec-padding: 15px 0;
 /* Media Queries */
 $break-extra-small: 320px;
 $break-small: 576px;
-$break-media: 768px;
+$break-medium: 768px;
 $break-large: 992px;
 $break-extra-large: 1200px;
